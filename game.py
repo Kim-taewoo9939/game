@@ -1,12 +1,22 @@
-print("게임을 시작합니다")	
-print("테트리스 시작")	
-print("1. 오른쪽 2. 왼쪽 3. 바꾸기")	
-number = input("숫자를 입력하세요: ")	
-print("당신이 입력한 숫자는?", number)	
-print("당신이 입력한 숫자는?", number)	
-if int(number) == 1:	
- print("오른쪽으로 이동")	
-# 만약에 2번을 누르면 왼쪽으로 이동	
-if int(number) == 2:	
- print("왼쪽으로 이동")	
-# 만약에 3번을 누르면 바꾸기 기능	
+print("퉁퉁이와 진구의 혈투...")
+list_a = ["퉁퉁이의 쨉" ,"퉁퉁이의 원투", "진구의 위빙","진구의 원투","퉁퉁이의 라이트 훅" ]
+print("1, 퉁퉁이의 쩁 2. 퉁퉁이의 원투 3. 진구의 위빙 4. 진구이 원투 5. 퉁퉁이의 라이트 훅")
+dict_b = {
+    "name" : "그만싸워"
+}
+i = 0
+while i < 10:
+    i = i+1
+    number = input("오더를 해주세요 : ")
+    if int(number) == 1:
+        print(list_a[0])
+    if int(number) == 2:
+        print(list_a[1])
+    if int(number) == 3:
+        print(list_a[2])
+    if int(number) == 4:
+        print(list_a[3])
+    if int(number) == 5:
+        print(list_a[4])
+    if i == 10:
+        print(dict_b["name"])
